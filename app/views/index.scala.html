@@ -1,0 +1,117 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <header class="main-header" xmlns="http://www.w3.org/1999/html">
+            <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/demo" class="navbar-brand">
+                            <!-- logo for regular state and mobile devices -->
+                        <span class="logo-lg"><img src='@routes.Assets.versioned("images/Sigmoid-logo.png")' style="height: 42px;padding-bottom: 5px;"></span>
+                    </a>
+                </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </header>
+
+    @*<div id="requestgraph1" style="width:1000px; height:300px;"></div>
+    <div id="graphdiv" style="width:1000px; height:300px;"></div>*@
+
+
+
+    <div class="row ">
+        <div class="col-lg-4">
+            <ul id = "ind">
+
+            </ul>
+        </div>
+        <div id = "hello" class="col-lg-8 ">
+            <table id = "table"></table>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div id = "ckey" class = "row">
+        <h3>Composite Key:</h3>
+        <div id= "d1"></div>
+    </div>
+
+    <hr class="line">
+
+    <div id ="metric" class = "row">
+
+    </div>
+
+    <hr class="line">
+
+    <div id = "timestamp" class = "row">
+        <div id = "div1">
+            <h3>TimeStamp</h3>
+        </div>
+        <div id = "div2">
+            @*<div class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">None <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            <li><a href="#">6sec</a></li>
+            <li><a href="#">12sec</a></li>
+            <li><a href="#">18sec</a></li>
+            <li><a href="#">24sec</a></li>
+            </ul>
+            </div>*@
+            <select id = "drop" class = "dropdown">
+                <option>None</option>
+                <option>Normal_time</option>
+                <option>12hr</option>
+                <option>18hr</option>
+                <option>1day</option>
+            </select>
+        </div>
+        <br><br>
+    </div>
+
+    <div id = "tag" class = "row">
+        <h3>TagBool:</h3>
+        <input type = "radio" value = "1" name = "tagbool"><span>One</span><br>
+        <input type = "radio" value = "0" name = "tagbool"><span>Zero</span><br>
+    </div>
+
+    <hr class = "line">
+
+    <div class = "row">
+        <div id="range">
+            <h3>Tvalue:</h3>
+            <input type = "text" name = "tvalue" id = "id1">
+            <h3>TagRangeFrom:</h3>
+            <input type = "text" name = "tagrangefrom" id = "id2">
+            <br><br><br>
+            <h3>TagRangeTo:</h3>
+            <input type = "text" name = "tagrangeto" id = "id3">
+            <br><br><br>
+        </div>
+        <div id = "std">
+            <h3>StdDevParameter:</h3>
+            <input type = "text" name = "stddevparam" id = "id4">
+            <br><br><br>
+        </div>
+    </div>
+
+    <div class= "row">
+        <button id="button" type="button">Submit</button>
+        <br>
+    </div>
+}

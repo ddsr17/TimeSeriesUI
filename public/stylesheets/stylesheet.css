@@ -1,0 +1,95 @@
+#ind{
+    cursor: pointer;
+}
+
+#graphdiv{
+    transform: translateY(50px);
+}
+
+.row{
+    transform: translateY(70px);
+    margin-left: 20px;
+}
+
+.basicTable{
+
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    background: #fff;
+    margin: 45px;
+    width: 480px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+.basicTable th
+{
+    font-size: 14px;
+    font-weight: normal;
+    color: #039;
+    padding: 10px 8px;
+    border-bottom: 2px solid #6678b1;
+}
+.basicTable td
+{
+    color: #669;
+    padding: 9px 8px 0px 8px;
+}
+
+#div1{
+    display: inline-block;
+}
+
+#div2{
+    display: inline-block;
+}
+
+#met1{
+    display: inline-block;
+}
+
+#met2{
+    display: inline-block;
+}
+
+#met3{
+    display: inline-block;
+}
+
+span{
+    font-size: large;
+}
+/*#timestamp ,#tag{
+    float: left;
+}
+
+#tag{
+    margin-left: 100px;
+}*/
+
+#requestgraph1{
+    transform: translateY(70px);
+}
+
+#std,#range{
+    float: left;
+}
+
+#std{
+    margin-left: 100px;
+}
+
+.line{
+    transform: translateY(70px);
+}
+
+button{
+    transform: translateY(70px);
+}
+/*
+button{
+    color: #000;
+    background: rgba(0,0,0,0);
+    border: solid 5px #000;
+}*/
